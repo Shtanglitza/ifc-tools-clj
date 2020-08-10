@@ -1,0 +1,85 @@
+{:IfcRelAggregates
+ {:GlobalId "091a6ewbvCMQ2Vyiqspa7a",
+  :OwnerHistory
+            {:IfcOwnerHistory
+             {:OwningUser
+                                {:IfcPersonAndOrganization
+                                 {:ThePerson
+                                  {:IfcPerson {:Identification "Jon", :FamilyName "Jon"}},
+                                  :TheOrganization
+                                  {:IfcOrganization {:Name "Geometry Gym Pty Ltd"}}}},
+              :OwningApplication
+                                {:IfcApplication
+                                 {:ApplicationDeveloper
+                                                         {:IfcOrganization {:Name "Geometry Gym Pty Ltd"}},
+                                  :Version "0.0.1.0",
+                                  :ApplicationFullName
+                                                         "ggRhinoIFC - Geometry Gym Plug-in for Rhino3d",
+                                  :ApplicationIdentifier "ggRhinoIFC"}},
+              :ChangeAction :ADDED,
+              :LastModifiedDate 1454575675,
+              :CreationDate 1454575675}},
+  :Name "Project Container",
+  :Description "Project Container for Buildings",
+  :RelatingObject
+  {:IfcProject
+   {:RepresentationContexts
+              [{:IfcGeometricRepresentationContext
+                {:ContextType "Model",
+                 :CoordinateSpaceDimension 3,
+                 :Precision 1.0E-4,
+                 :WorldCoordinateSystem
+                 {:IfcAxis2Placement3D
+                  {:Location
+                   {:IfcCartesianPoint {:Coordinates (0.0 0.0 0.0)}}}}}}],
+    :GlobalId "0$WU4A9R19$vKWO$AdOnKA",
+    :Name "IfcProject",
+    :UnitsInContext
+              {:IfcUnitAssignment
+               {:Units
+                [{:IfcSIUnit
+                  {:UnitType :LENGTHUNIT, :Prefix :MILLI, :Name :METRE}}
+                 {:IfcSIUnit {:UnitType :PLANEANGLEUNIT, :Name :RADIAN}}
+                 {:IfcSIUnit {:UnitType :TIMEUNIT, :Name :SECOND}}]}},
+    :OwnerHistory
+              {:IfcOwnerHistory
+               {:OwningUser
+                                  {:IfcPersonAndOrganization
+                                   {:ThePerson
+                                    {:IfcPerson {:Identification "Jon", :FamilyName "Jon"}},
+                                    :TheOrganization
+                                    {:IfcOrganization {:Name "Geometry Gym Pty Ltd"}}}},
+                :OwningApplication
+                                  {:IfcApplication
+                                   {:ApplicationDeveloper
+                                                           {:IfcOrganization {:Name "Geometry Gym Pty Ltd"}},
+                                    :Version "0.0.1.0",
+                                    :ApplicationFullName
+                                                           "ggRhinoIFC - Geometry Gym Plug-in for Rhino3d",
+                                    :ApplicationIdentifier "ggRhinoIFC"}},
+                :ChangeAction :ADDED,
+                :LastModifiedDate 1454575675,
+                :CreationDate 1454575675}}}},
+  :RelatedObjects
+  [{:IfcBuilding
+    {:GlobalId "39t4Pu3nTC4ekXYRIHJB9W",
+     :Name "IfcBuilding",
+     :OwnerHistory
+               {:IfcOwnerHistory
+                {:OwningUser
+                                   {:IfcPersonAndOrganization
+                                    {:ThePerson
+                                     {:IfcPerson {:Identification "Jon", :FamilyName "Jon"}},
+                                     :TheOrganization
+                                     {:IfcOrganization {:Name "Geometry Gym Pty Ltd"}}}},
+                 :OwningApplication
+                                   {:IfcApplication
+                                    {:ApplicationDeveloper
+                                                            {:IfcOrganization {:Name "Geometry Gym Pty Ltd"}},
+                                     :Version "0.0.1.0",
+                                     :ApplicationFullName
+                                                            "ggRhinoIFC - Geometry Gym Plug-in for Rhino3d",
+                                     :ApplicationIdentifier "ggRhinoIFC"}},
+                 :ChangeAction :ADDED,
+                 :LastModifiedDate 1454575675,
+                 :CreationDate 1454575675}}}}]}}

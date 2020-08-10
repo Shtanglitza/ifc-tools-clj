@@ -1,0 +1,90 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION((''),'2;1');
+FILE_NAME('','2019-03-24T14:01:44',(''),(''),'BuildingSmart IfcKit by Constructivity','IfcDoc 12.0.0.0','');
+FILE_SCHEMA(('IFC4x2'));
+ENDSEC;
+
+DATA;
+
+#1= IfcBuilding('39t4Pu3nTC4ekXYRIHJB9W',#2,'IfcBuilding',$,$,$,$,$,$,$,$,$);
+#2= IfcOwnerHistory(#5,#6,$,.ADDED.,1454575675,$,$,1454575675);
+#5= IfcPersonAndOrganization(#7,#8,$);
+#6= IfcApplication(#9,'0.0.1.0','ggRhinoIFC - Geometry Gym Plug-in for Rhino3d','ggRhinoIFC');
+#7= IfcPerson('Jon','Jon',$,$,$,$,$,$);
+#8= IfcOrganization($,'Geometry Gym Pty Ltd',$,$,$);
+#9= IfcOrganization($,'Geometry Gym Pty Ltd',$,$,$);
+
+#3= IfcRelAggregates('091a6ewbvCMQ2Vyiqspa7a',#2,'Project Container','Project Container for Buildings',#10,(#1));
+
+#4= IfcRelContainedInSpatialStructure('3Sa3dTJGn0H8TQIGiuGQd5',#2,'Building','Building Container for Elements',(#11,#12),#1);
+
+#10= IfcProject('0$WU4A9R19$vKWO$AdOnKA',#2,'IfcProject',$,$,$,$,(#13),#14);
+#13= IfcGeometricRepresentationContext($,'Model',3,0.0001,#16,$);
+#14= IfcUnitAssignment((#19,#20,#21));
+#16= IfcAxis2Placement3D(#22,$,$);
+#17= IfcGeometricRepresentationSubContext('Axis','Model',0,$,$,$,#13,$,.MODEL_VIEW.,$);
+#18= IfcGeometricRepresentationSubContext('Body','Model',0,$,$,$,#13,$,.MODEL_VIEW.,$);
+#19= IfcSIUnit($,.LENGTHUNIT.,.MILLI.,.METRE.);
+#20= IfcSIUnit($,.PLANEANGLEUNIT.,$,.RADIAN.);
+#21= IfcSIUnit($,.TIMEUNIT.,$,.SECOND.);
+#22= IfcCartesianPoint((0.,0.,0.));
+#23= IfcShapeRepresentation(#18,'Axis','Curve3D',(#27));
+#24= IfcShapeRepresentation(#18,'Body','SweptSolid',(#29));
+#25= IfcShapeRepresentation(#18,'Axis','Curve3D',(#30));
+#26= IfcShapeRepresentation(#18,'Body','SweptSolid',(#32));
+#27= IfcPolyline((#33,#34));
+#28= IfcProductDefinitionShape($,$,(#23,#24));
+#29= IfcExtrudedAreaSolid(#35,#36,#37,1000.);
+#30= IfcTrimmedCurve(#38,(IfcParameterValue(0.),#39),(IfcParameterValue(0.789582239399523),#40),.T.,.CARTESIAN.);
+#31= IfcProductDefinitionShape($,$,(#25,#26));
+#32= IfcRevolvedAreaSolid(#35,#41,#42,0.789582239399523);
+#33= IfcCartesianPoint((0.,0.,0.));
+#34= IfcCartesianPoint((0.,0.,1000.));
+#35= IfcIShapeProfileDef(.AREA.,'IPE200',$,100.,200.,5.6,8.5,12.,$,$);
+#36= IfcAxis2Placement3D(#43,$,$);
+#37= IfcDirection((0.,0.,1.));
+#38= IfcCircle(#44,1300.);
+#39= IfcCartesianPoint((0.,0.,0.));
+#40= IfcCartesianPoint((-384.615384615385,0.,923.076923076923));
+#41= IfcAxis2Placement3D(#45,$,$);
+#42= IfcAxis1Placement(#46,#47);
+#43= IfcCartesianPoint((0.,-100.,0.));
+#44= IfcAxis2Placement3D(#48,#49,#50);
+#45= IfcCartesianPoint((0.,-100.,0.));
+#46= IfcCartesianPoint((-1300.,100.,0.));
+#47= IfcDirection((0.,-1.,0.));
+#48= IfcCartesianPoint((-1300.,0.,0.));
+#49= IfcDirection((0.,-1.,0.));
+#50= IfcDirection((1.,0.,0.));
+
+#11= IfcBeamStandardCase('0a_qfeQLDA8e5qT$Do6J_t',#2,'Extrusion',$,$,#51,#28,$,$);
+#51= IfcLocalPlacement($,#54);
+#54= IfcAxis2Placement3D(#22,#55,#56);
+#55= IfcDirection((0.,1.,0.));
+#56= IfcDirection((-1.,0.,0.));
+
+#12= IfcBeamStandardCase('1zqFh80l11VgfEm3ZWh6Xv',#2,'Revolution',$,$,#57,#31,$,$);
+#57= IfcLocalPlacement($,#58);
+#58= IfcAxis2Placement3D(#59,#60,#61);
+#59= IfcCartesianPoint((0.,0.,400.));
+#60= IfcDirection((-0.38461538,0.92307692,0.));
+#61= IfcDirection((-0.92307692,-0.38461538,0.));
+
+#15= IfcRelDeclares('2tgfGrMZ15PQOp9j9EqeaR',#2,$,$,#10,(#62));
+
+#52= IfcRelAssociatesMaterial('1z88xyNXv81fAC6nEJ5vvQ',#2,'MatAssoc','Material Associates',(#11,#12),#63);
+#63= IfcMaterialProfileSetUsage(#64,8,$);
+#64= IfcMaterialProfileSet('IPE200',$,(#65),$);
+#65= IfcMaterialProfile('IPE200',$,#67,#35,0,$);
+#67= IfcMaterial('S355JR','Steel',$);
+
+#53= IfcRelDefinesByType('3s_DqAVvb3LguudTShJHVo',#2,$,$,(#11,#12),#62);
+
+#62= IfcBeamType('32b2OtzCP30umNyY5LsCfN',#2,'IPE200',$,$,$,$,$,$,.JOIST.);
+
+#66= IfcRelAssociatesMaterial('2LPqZalgP6XhOHEQMvGdhT',#2,'MatAssoc','Material Associates',(#62),#64);
+ENDSEC;
+
+END-ISO-10303-21;
+

@@ -1,0 +1,47 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION((''),'2;1');
+FILE_NAME('','2019-03-24T14:00:59',(''),(''),'BuildingSmart IfcKit by Constructivity','IfcDoc 12.0.0.0','');
+FILE_SCHEMA(('IFC4x2'));
+ENDSEC;
+
+DATA;
+
+#1= IfcProject('0xScRe4drECQ4DMSqUjd6d',#2,'proxy with swept solid',$,$,$,$,(#3),#4);
+#2= IfcOwnerHistory(#6,#7,$,.ADDED.,1320688800,$,$,1320688800);
+#3= IfcGeometricRepresentationContext($,'Model',3,1.0E-05,#8,$);
+#4= IfcUnitAssignment((#10,#11));
+#6= IfcPersonAndOrganization(#12,#13,$);
+#7= IfcApplication(#13,'1.0','IFC text editor','ifcTE');
+#8= IfcAxis2Placement3D(#14,$,$);
+#9= IfcGeometricRepresentationSubContext('Body','Model',0,$,$,$,#3,$,.MODEL_VIEW.,$);
+#10= IfcSIUnit($,.LENGTHUNIT.,.MILLI.,.METRE.);
+#11= IfcConversionBasedUnit(#16,.PLANEANGLEUNIT.,'degree',#17);
+#12= IfcPerson($,'Liebich','Thomas',$,$,$,$,$);
+#13= IfcOrganization($,'buildingSMART International',$,$,$);
+#14= IfcCartesianPoint((0.,0.,0.));
+#15= IfcShapeRepresentation(#9,'Body','SweptSolid',(#18));
+#16= IfcDimensionalExponents(0,0,0,0,0,0,0);
+#17= IfcMeasureWithUnit(IfcPlaneAngleMeasure(0.017453293),#20);
+#18= IfcExtrudedAreaSolid(#21,$,#22,2000.);
+#19= IfcProductDefinitionShape($,$,(#15));
+#20= IfcSIUnit($,.PLANEANGLEUNIT.,$,.RADIAN.);
+#21= IfcRectangleProfileDef(.AREA.,'1m x 1m rectangle',$,1000.,1000.);
+#22= IfcDirection((0.,0.,1.));
+
+#5= IfcRelAggregates('2YBqaV_8L15eWJ9DA1sGmT',$,$,$,#1,(#24));
+
+#23= IfcBuildingElementProxy('1kTvXnbbzCWw8lcMd1dR4o',$,'P-1','sample proxy',$,#25,#19,$,$);
+#25= IfcLocalPlacement(#27,#28);
+#27= IfcLocalPlacement($,#29);
+#28= IfcAxis2Placement3D(#30,$,$);
+#29= IfcAxis2Placement3D(#14,$,$);
+#30= IfcCartesianPoint((1000.,0.,0.));
+
+#24= IfcBuilding('2FCZDorxHDT8NI01kdXi8P',$,'Test Building',$,$,#27,$,$,.ELEMENT.,$,$,$);
+
+#26= IfcRelContainedInSpatialStructure('2TnxZkTXT08eDuMuhUUFNy',$,'Physical model',$,(#23),#24);
+ENDSEC;
+
+END-ISO-10303-21;
+

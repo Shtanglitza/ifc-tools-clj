@@ -1,0 +1,1 @@
+https://standards.buildingsmart.org/IFC/DEV/IFC4_2/FINAL/HTML/annex/annex-e/terrain-surface.ifc

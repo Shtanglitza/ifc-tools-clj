@@ -1,0 +1,72 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION((''),'2;1');
+FILE_NAME('','2019-03-24T14:00:59',(''),(''),'BuildingSmart IfcKit by Constructivity','IfcDoc 12.0.0.0','');
+FILE_SCHEMA(('IFC4x2'));
+ENDSEC;
+
+DATA;
+
+#1= IfcProject('0xScRe4drECQ4DMSqUjd6d',#2,'proxy with brep',$,$,$,$,(#3),#4);
+#2= IfcOwnerHistory(#6,#7,$,.ADDED.,1320688800,$,$,1320688800);
+#3= IfcGeometricRepresentationContext($,'Model',3,1.0E-05,#8,$);
+#4= IfcUnitAssignment((#10,#11));
+#6= IfcPersonAndOrganization(#12,#13,$);
+#7= IfcApplication(#13,'1.0','IFC text editor','ifcTE');
+#8= IfcAxis2Placement3D(#14,$,$);
+#9= IfcGeometricRepresentationSubContext('Body','Model',0,$,$,$,#3,$,.MODEL_VIEW.,$);
+#10= IfcSIUnit($,.LENGTHUNIT.,.MILLI.,.METRE.);
+#11= IfcConversionBasedUnit(#16,.PLANEANGLEUNIT.,'degree',#17);
+#12= IfcPerson($,'Liebich','Thomas',$,$,$,$,$);
+#13= IfcOrganization($,'buildingSMART International',$,$,$);
+#14= IfcCartesianPoint((0.,0.,0.));
+#15= IfcShapeRepresentation(#9,'Body','Brep',(#18));
+#16= IfcDimensionalExponents(0,0,0,0,0,0,0);
+#17= IfcMeasureWithUnit(IfcPlaneAngleMeasure(0.017453293),#20);
+#18= IfcFacetedBrep(#21);
+#19= IfcProductDefinitionShape($,$,(#15));
+#20= IfcSIUnit($,.PLANEANGLEUNIT.,$,.RADIAN.);
+#21= IfcClosedShell((#23,#24,#25,#26,#27,#28));
+#23= IfcFace((#29));
+#24= IfcFace((#30));
+#25= IfcFace((#31));
+#26= IfcFace((#32));
+#27= IfcFace((#33));
+#28= IfcFace((#34));
+#29= IfcFaceOuterBound(#35,.T.);
+#30= IfcFaceOuterBound(#36,.T.);
+#31= IfcFaceOuterBound(#37,.T.);
+#32= IfcFaceOuterBound(#38,.T.);
+#33= IfcFaceOuterBound(#39,.T.);
+#34= IfcFaceOuterBound(#40,.T.);
+#35= IfcPolyLoop((#41,#42,#43,#44));
+#36= IfcPolyLoop((#43,#42,#45,#46));
+#37= IfcPolyLoop((#46,#45,#47,#48));
+#38= IfcPolyLoop((#48,#47,#41,#44));
+#39= IfcPolyLoop((#41,#47,#45,#42));
+#40= IfcPolyLoop((#43,#46,#48,#44));
+#41= IfcCartesianPoint((-500.,-500.,0.));
+#42= IfcCartesianPoint((500.,-500.,0.));
+#43= IfcCartesianPoint((500.,-500.,2000.));
+#44= IfcCartesianPoint((-500.,-500.,2000.));
+#45= IfcCartesianPoint((500.,500.,0.));
+#46= IfcCartesianPoint((500.,500.,2000.));
+#47= IfcCartesianPoint((-500.,500.,0.));
+#48= IfcCartesianPoint((-500.,500.,2000.));
+
+#5= IfcRelAggregates('2YBqaV_8L15eWJ9DA1sGmT',$,$,$,#1,(#49));
+
+#22= IfcBuildingElementProxy('1kTvXnbbzCWw8lcMd1dR4o',$,'P-1','sample proxy',$,#50,#19,$,$);
+#50= IfcLocalPlacement(#52,#53);
+#52= IfcLocalPlacement($,#54);
+#53= IfcAxis2Placement3D(#55,$,$);
+#54= IfcAxis2Placement3D(#14,$,$);
+#55= IfcCartesianPoint((1000.,0.,0.));
+
+#49= IfcBuilding('2FCZDorxHDT8NI01kdXi8P',$,'Test Building',$,$,#52,$,$,.ELEMENT.,$,$,$);
+
+#51= IfcRelContainedInSpatialStructure('2TnxZkTXT08eDuMuhUUFNy',$,'Physical model',$,(#22),#49);
+ENDSEC;
+
+END-ISO-10303-21;
+
