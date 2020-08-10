@@ -6,6 +6,7 @@
   :plugins [[lein-tools-deps "0.4.5"]
             [s3-wagon-private "1.3.4"]]
   :middleware [lein-tools-deps.plugin/resolve-dependencies-with-deps-edn]
+  :dependencies [[org.clojure/clojure "1.10.1"]]
   :lein-tools-deps/config {:config-files [:project]
                            :resolve-aliases [:test]}
   :repl-options {:init-ns ifc-tools-clj.step.core}
