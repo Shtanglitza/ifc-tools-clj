@@ -10,11 +10,15 @@
 
 (def ^Parser step-parser
   (antlr/parser
-    (.getPath (io/resource "STEP.g4"))))
+    (slurp (.getResourceAsStream
+             (clojure.lang.RT/baseLoader)
+             "STEP.g4"))))
 
 (def exp-parser
   (antlr/parser
-    (.getPath (io/resource "Express.g4"))))
+    (slurp (.getResourceAsStream
+             (clojure.lang.RT/baseLoader)
+             "Express.g4"))))
 
 (defn parse-step
   [step-file]
