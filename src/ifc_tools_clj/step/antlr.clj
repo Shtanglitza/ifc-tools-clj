@@ -6,18 +6,19 @@
                                  Parser
                                  ;Token
                                  ;CommonTokenStream
-                                 )))
+                                 )
+           (clojure.lang RT)))
 
 (def ^Parser step-parser
   (antlr/parser
     (slurp (.getResourceAsStream
-             (clojure.lang.RT/baseLoader)
+             (RT/baseLoader)
              "STEP.g4"))))
 
 (def exp-parser
   (antlr/parser
     (slurp (.getResourceAsStream
-             (clojure.lang.RT/baseLoader)
+             (RT/baseLoader)
              "Express.g4"))))
 
 (defn parse-step

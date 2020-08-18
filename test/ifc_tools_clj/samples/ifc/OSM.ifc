@@ -1,0 +1,91 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [notYetAssigned]'),'2;1');
+FILE_NAME(
+/* name */ 'polygonal-faceset-cube.ifc',
+/* time_stamp */ '2016-05-26T17:38:29',
+/* author */ ('jonm'),
+/* organization */ ('Geometry Gym'),
+/* preprocessor_version */ 'GeomGymIFC by Geometry Gym Pty Ltd',
+/* originating_system */ 'ggRhinoIFC - Grasshopper3d Plug-in by Geometry Gym Pty Ltd',
+/* authorization */ 'None');
+FILE_SCHEMA (('IFC4'));
+ENDSEC;
+DATA;
+
+#1 = IFCPROJECT('28hypXUBvBefc20SI8kfA$', #2, 'Default Project', 'Description of Default Project', $, $, $, (#14), #7);
+
+#2 = IFCOWNERHISTORY(#3, #6, $, .NOTDEFINED., $, $, $, 1323724715);
+#3 = IFCPERSONANDORGANIZATION(#4, #5, $);
+#4 = IFCPERSON($, 'Bonsma', 'Peter', $, $, $, $, $);
+#5 = IFCORGANIZATION($, 'RDF', 'RDF Ltd.', $, $);
+#6 = IFCAPPLICATION(#5, '0.10', 'Test Application', 'TA 1001');
+
+#7= IFCUNITASSIGNMENT((#11,#12,#13,#9,#10));
+#8= IFCSIUNIT(*,.LENGTHUNIT.,.MILLI.,.METRE.);
+#9= IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
+#10= IFCSIUNIT(*,.TIMEUNIT.,$,.SECOND.);
+#11= IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#12= IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
+#13= IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
+
+#14= IFCGEOMETRICREPRESENTATIONCONTEXT($,'Model',3,0.01,#15,$);
+#15= IFCAXIS2PLACEMENT3D(#16,$,$);
+#16= IFCCARTESIANPOINT((0.0,0.0,0.0));
+
+#19= IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Axis','Model',*,*,*,*,#14,0.0,.MODEL_VIEW.,$);
+#20= IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Body','Model',*,*,*,*,#14,0.0,.MODEL_VIEW.,$);
+
+#24 = IFCSITE('1cwlDi_hLEvPsClAelBNnz', #2, 'Default Site', 'Description of Default Site', $, #25, $, $, .ELEMENT., (24, 28, 0), (54, 25, 0), 10., $, $);
+#25 = IFCLOCALPLACEMENT($, #26);
+#26 = IFCAXIS2PLACEMENT3D(#16, $, $);
+
+#27 = IFCBUILDING('0AqAhXVxvCy9m0OX1nxY1A', #2, 'Default Building', 'Description of Default Building', $, #28, $, $, .ELEMENT., $, $, #30);
+#28 = IFCLOCALPLACEMENT(#25, #29);
+/* no rotation - z and x axes set to '$' are therefore identical to "world coordinate system" -- */
+#29 = IFCAXIS2PLACEMENT3D(#16, $, $);
+#30 = IFCPOSTALADDRESS($, $, $, $, ('RDF Ltd.', 'Main Office'), '32', 'Bankya', 'Sofia', '1320', 'Bulgaria');
+
+#31 = IFCBUILDINGSTOREY('2GNgSHJ5j9BRUjqT$7tE8w', #2, 'Default Building Storey', 'Description of Default Building Storey', $, #32, $, $, .ELEMENT., 0.);
+#32 = IFCLOCALPLACEMENT(#28, #33);
+/* no rotation - z and x axes set to '$' are therefore identical to "world coordinate system" -- */
+#33 = IFCAXIS2PLACEMENT3D(#16, $, $);
+
+#34 = IFCWALL('3ZYW59sxj8lei475l7EhLU', #2, 'Wall for Test Example', 'Description of Wall', $, #35, #54, $, $);
+#35 = IFCLOCALPLACEMENT(#32, #36);
+/* no rotation - z and x axes set to '$' are therefore identical to "world coordinate system" -- */
+#36 = IFCAXIS2PLACEMENT3D(#16, $, $);
+
+#40= IFCCARTESIANPOINTLIST3D(((-10.0,-10.0,0.0),(10.0,-10.0,0.0),(10.0,10.0,0.0),(-10.0,10.0,0.0),(-10.0,-10.0,10.0),(10.0,-10.0,10.0),(10.0,10.0,10.0),(-10.0,10.0,10.0),(-5.0,-5.0,0.0),(5.0,-5.0,0.0),(5.0,5.0,0.0),(-5.0,5.0,0.0),(5.0,-5.0,10.0),(-5.0,-5.0,10.0),(5.0,5.0,10.0),(-5.0,5.0,10.0)));
+#41= IFCINDEXEDPOLYGONALFACE((2,6,5,1));
+#42= IFCINDEXEDPOLYGONALFACE((3,7,6,2));
+#43= IFCINDEXEDPOLYGONALFACE((4,8,7,3));
+#44= IFCINDEXEDPOLYGONALFACE((1,5,8,4));
+#52= IFCPOLYGONALFACESET(#40,.T.,(#41,#42,#43,#44),$);
+#53= IFCSHAPEREPRESENTATION(#20,'Body','Tessellation',(#52));
+#54= IFCPRODUCTDEFINITIONSHAPE($,$,(#53));
+
+#60 = IFCROOF('3ZYW59sxj8lei475l7EhLO', #2, 'Roof for Test Example', 'Description of Roof', $, #61, #68, $, $);
+#61 = IFCLOCALPLACEMENT(#32, #62);
+/* no rotation - z and x axes set to '$' are therefore identical to "world coordinate system" -- */
+#62 = IFCAXIS2PLACEMENT3D(#16, $, $);
+#63 = IFCPRODUCTDEFINITIONSHAPE($, $, ($, #48));
+
+#64= IFCCARTESIANPOINTLIST3D(((-10.0,-10.0,0.0),(10.0,-10.0,0.0),(10.0,10.0,0.0),(-10.0,10.0,0.0),(-10.0,-10.0,10.0),(10.0,-10.0,10.0),(10.0,10.0,10.0),(-10.0,10.0,10.0),(-5.0,-5.0,0.0),(5.0,-5.0,0.0),(5.0,5.0,0.0),(-5.0,5.0,0.0),(5.0,-5.0,10.0),(-5.0,-5.0,10.0),(5.0,5.0,10.0),(-5.0,5.0,10.0)));
+#65= IFCINDEXEDPOLYGONALFACEWITHVOIDS((6,7,8,5),((14,16,15,13)));
+#66= IFCPOLYGONALFACESET(#40,.T.,(#65),$);
+#67= IFCSHAPEREPRESENTATION(#20,'Body','Tessellation',(#66));
+#68= IFCPRODUCTDEFINITIONSHAPE($,$,(#67));
+
+#90 = IFCRELAGGREGATES('1Lm3qeFdPFmvCQm$QtrkO_', #2, 'BuildingContainer', 'BuildingContainer for BuildigStories', #27, (#31));
+#91 = IFCRELAGGREGATES('16zMrDm_P2fv4w8_JewkSy', #2, 'SiteContainer', 'SiteContainer For Buildings', #24, (#27));
+#92 = IFCRELAGGREGATES('3IdcKtxyTFSPDjAagDGuOq', #2, 'ProjectContainer', 'ProjectContainer for Sites', #1, (#24));
+#93 = IFCRELCONTAINEDINSPATIALSTRUCTURE('0w_L$jTK98v8wOzKFGjTuo', #2, 'Default Building', 'Contents of Building Storey', (#34, #60), #31);
+
+
+
+
+
+ENDSEC;
+
+END-ISO-10303-21;
